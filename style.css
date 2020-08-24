@@ -1,0 +1,42 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 14px;
+}
+#menu-drop {
+    margin: 10px;
+    width: 300px;
+}
+
+#menu-drop li {
+   list-style: none;
+    background: blue;
+    line-height: 30px;
+    margin-bottom: 3px;
+    color: white;
+}
+#menu-drop li a {
+    margin-left: 10px;
+}
+
+#menu-drop ul {
+    background: pink;
+    padding: 0;
+    display: none;
+}
+
+#menu-drop ul li {
+    background-color: pink;
+}
+
+.drop-item {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+   <div id="menu-drop" class="dropmn">
+        <li>   
+            <a class="dropbtn" >Trang chủ</a>
+            <ul class="drop-content">
+                <li><a href="" class="drop-item">Trang chủ 1</a></li>
+                <li><a href="" class="drop-item">Trang chủ 2</a></li>
+                <li><a href="" class="drop-item">Trang chủ 3</a></li>
+            </ul>
+        </li> 
+           
+        <li>
+            <a class="dropbtn" >Sản phẩm</a>
+            <ul class="drop-content">
+                <li><a href="" class="drop-item">Sản phẩm 1</a></li>
+                <li><a href="" class="drop-item">Sản phẩm 2</a></li>
+                <li><a href="" class="drop-item">Sản phẩm 3</a></li>
+            </ul>
+       </li>
+        
+        <li>
+            <a class="dropbtn" >Tin tức</a>
+            <ul class="drop-content">
+                <li><a href="" class="drop-item">Tin công nghệ</a></li>
+                <li><a href="" class="drop-item">Tin trong nước</a></li>
+                <li><a href="" class="drop-item">Tin thời sự</a></li>
+            </ul>
+        </li>
+          
+        <li>
+           <a class="dropbtn">Dịch vụ</a>
+            <ul class="drop-content">
+                <li><a href="" class="drop-item">Dịch vụ 1</a></li>
+                <li><a href="" class="drop-item">Dịch vụ 2</a></li>
+                <li><a href="" class="drop-item">Dịch vụ 3</a></li>
+            </ul>
+        </li>
+    </div>
+    
+    <script>
+
+        const menu = document.querySelectorAll('#menu-drop > li');
+        for(let i = 0 ; i < menu.length ; i++ ) {
+            menu[i].addEventListener("click", () => {
+                
+                var menuItems = document.querySelectorAll('#menu-drop > li > ul');
+                for (let j = 0; j< menuItems.length ; j ++) {
+                    menuItems[j].style.display = "none";
+                }
+                menuItems[i].style.display = "block";
+            });
+        }
+        
+    </script>
+</body>
+</html>
